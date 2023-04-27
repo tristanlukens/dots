@@ -35,3 +35,4 @@ Install GNU `stow` if you don't have it yet.
 ## Todo
 
 - [ ] add install scripts
+- [ ] it turns out submodules didn't work, so I've gotta fix that
