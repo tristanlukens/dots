@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------- #
 
 ## -- ENV SETUP -- ##
-export DOTS="$HOME/.dots" # a lot relies on this directory being here. Put it here please. It's also defined in the linker script
+export DOTS="$HOME/dots" # a lot relies on this directory being here. Put it here please. It's also defined in the linker script
 
 export BREW_LOC="/opt/homebrew"
 export PROJECTS="$HOME/Documents/projects" # rust and ts projects mainly. Go projects are in their own folder
@@ -73,7 +73,7 @@ bindkey -M vicmd "^[[B" down-line-or-beginning-search # down arrow
 
 ## -- PROGRAM CONFIGS -- ##
 # see first zsh todo
-source $DOTS/zsh/config.zsh
+source $DOTS/.config/zsh/config.zsh
 
 # ---------------------------------------------------------------- #
 
@@ -93,7 +93,7 @@ eval "$(fnm env)"
 # ---------------------------------------------------------------- #
 
 ## -- ALIASES -- ##
-source $DOTS/zsh/aliases.zsh
+source $DOTS/.config/zsh/aliases.zsh
 
 # ---------------------------------------------------------------- #
 
@@ -114,13 +114,13 @@ source $BREW_LOC/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highligh
 # zsh-vim-mode [https://github.com/softmoth/zsh-vim-mode]
 #MODE_INDICATOR="" # probably wanna turn that off when using ligatures
 KEYTIMEOUT=1 # https://youtu.be/lppTJFYigoU?t=11
-source $DOTS/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh
+source $DOTS/.config/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh
 
 # ---------------------------------------------------------------- #
 
 ## -- FUNCTIONS -- ##
-autoload -Uz $DOTS/zsh/functions/*(:t) # I have no idea why that (:t) is there, but it's probably important...
-fpath=($fpath $DOTS/zsh/functions)
+autoload -Uz $DOTS/.config/zsh/functions/*(:t) # I have no idea why that (:t) is there, but it's probably important...
+fpath=($fpath $DOTS/.config/zsh/functions)
 
 # this is VERY slow the first time, because it needs to be chached then
 # even then though, it's kind of slow
@@ -132,7 +132,7 @@ fpath=($fpath $DOTS/zsh/functions)
 # ---------------------------------------------------------------- #
 
 ## -- PROGRAM CONFIGS -- ##
-source $DOTS/zsh/config.zsh # fzf doesn't work properly otherwise. Remember you have to have run `/opt/homebrew/opt/fzf/install` for .fzf.zsh to be generated
+source $DOTS/.config/zsh/config.zsh # fzf doesn't work properly otherwise. Remember you have to have run `/opt/homebrew/opt/fzf/install` for .fzf.zsh to be generated
 
 # ---------------------------------------------------------------- #
 
