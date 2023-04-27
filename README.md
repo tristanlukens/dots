@@ -20,6 +20,16 @@ Maybe I'll find a hybrid way to do it.
 
 Also: I've kept alive the old project but renamed it to `dotfiles_old`.
 
+## ~~Installation~~ Symlink management
+
+Install GNU `stow` if you don't have it yet.
+
+1. `git clone https://github.com/tristanlukens/dots.git $HOME/dots`
+2. `cd $HOME/dots`
+3. `stow .`
+
+<small>Now that I think about it — if you haven't installed anything, you won't have `stow` installed so installation scripts would be too much right?! Idfk, maybe this approach won't last as long as I first thought I would</small>
+
 ---
 
 ## Todo
