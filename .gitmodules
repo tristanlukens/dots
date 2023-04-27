@@ -1,0 +1,9 @@
+[submodule "zsh/plugins/zsh-vim-mode"]
+	path = zsh/plugins/zsh-vim-mode
+	url = https://github.com/softmoth/zsh-vim-mode
+[submodule "alacritty/catppuccin"]
+	path = alacritty/catppuccin
+	url = https://github.com/catppuccin/alacritty
+[submodule "alacritty/themes"]
+	path = alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme

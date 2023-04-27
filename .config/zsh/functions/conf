@@ -1,0 +1,5 @@
+conf() {
+	cd $DOTS
+	ef
+	cd $OLDPWD
+}

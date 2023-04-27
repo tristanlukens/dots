@@ -1,0 +1,10 @@
+todo() {
+	# no deletion functionality; I like to delete them via the GUI
+	
+	if [[ $# -eq 0 ]]
+	then
+		ls -1 $HOME/Desktop
+	fi
+	
+	touch "$HOME/Desktop/$*"
+}

@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+read "confirm?Type confirm to continue: "
+
+[[ ! ${confirm} = "confirm" ]] && echo "Confirmation failed; aborting"; exit 1
+
+for file in $HOME/.local/share/nvim/swap/*
+do
+	rm $file
+done

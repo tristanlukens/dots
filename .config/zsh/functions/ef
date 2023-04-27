@@ -1,0 +1,9 @@
+ef() {
+	if [[ $# -eq 0 ]]
+	then
+		local file=$(fzf)
+		[[ -n $file ]] && $EDITOR $file || echo "No file specified, aborting"
+	else
+		$EDITOR $1
+	fi
+}

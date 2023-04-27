@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+m dock autohide YES
+m dock magnification YES
+
+m dock autohidedelay 0
+
+m wallpaper $HOME/Pictures/wallpapers/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg

@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+for script in $DOTS/bin/*
+do
+	chmod +x $script
+done

@@ -1,0 +1,20 @@
+dlmp3() {
+	cd $HOME/Music
+
+	if [[ -f  $HOME/Music/mp3 ]]
+	then
+		mkdir -p $HOME/Music/mp3
+	fi
+
+	cd mp3
+
+	if [[ $# -gt 0 ]]
+	then
+		yt-dlp --no-playlist -x --audio-format mp3 "$1"
+	else
+		vared -p "Enter the video's link and press enter: " -c link
+		yt-dlp --no-playlist -x --audio-format mp3 "$link"
+	fi
+
+	cd $OLDPWD
+}
