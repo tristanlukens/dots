@@ -7,3 +7,5 @@ README.md
 .gitmodules
 
 bin
+
+.stow-local-ignore
