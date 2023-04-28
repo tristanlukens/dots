@@ -6,7 +6,7 @@
 export DOTS="$HOME/dots" # a lot relies on this directory being here. Put it here please. It's also defined in the linker script
 
 export BREW_LOC="/opt/homebrew"
-export PROJECTS="$HOME/Documents/projects" # rust and ts projects mainly. Go projects are in their own folder
+export PROJECTS="$HOME/Documents" # rust and ts projects mainly. Go projects are in their own folder
 
 export EDITOR="nvim"
 export VISUAL="cot"

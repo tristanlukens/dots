@@ -1,6 +1,6 @@
 ## -- GENERAL -- ##
 alias la="ls -la --color"
-alias reload="source $DOTS/zsh/zshrc"
+alias reload="source $DOTS/.zshrc"
 alias showpath="echo '${PATH//:/\n}'"
 
 ## -- DOCKER -- ##
@@ -26,7 +26,6 @@ alias pip="pip3"
 ## -- RUST -- ##
 alias cr="cargo run"
 alias cb="cargo build"
-alias cc="cargo check"
 
 ## -- TREE -- ##
 alias ta="tree -Cax"

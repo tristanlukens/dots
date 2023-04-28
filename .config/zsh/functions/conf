@@ -1,5 +1,5 @@
 conf() {
 	cd $DOTS
-	ef
+	FZF_DEFAULT_COMMAND="$FZF_DEFAULT_COMMAND --hidden" ef
 	cd $OLDPWD
 }
