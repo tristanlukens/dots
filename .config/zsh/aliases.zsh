@@ -3,6 +3,9 @@ alias la="ls -la --color"
 alias reload="source $DOTS/.zshrc"
 alias showpath="echo '${PATH//:/\n}'"
 
+# this only has to stay as long as I'm still used to using rm
+alias rm="echo 'USE TRASH DAMMIT'; read -s; rm"
+
 ## -- DOCKER -- ##
 alias disp="docker run --rm --name disp -h disp -it ubuntu:latest"
 
