@@ -58,9 +58,6 @@ SAVEHIST=10000
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab pending
-autoload -Uz compinit
-compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
-_comp_options+=(globdots)
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
@@ -118,7 +115,7 @@ source $DOTS/.config/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh
 
 # ---------------------------------------------------------------- #
 
-## -- FUNCTIONS -- ##
+## -- FUNCTIONS AND COMPLETIONS -- ##
 autoload -Uz $DOTS/.config/zsh/functions/*(:t) # I have no idea why that (:t) is there, but it's probably important...
 fpath=($fpath $DOTS/.config/zsh/functions)
 
@@ -128,6 +125,10 @@ fpath=($fpath $DOTS/.config/zsh/functions)
 #do
 #	fpath=($dir $fpath)
 #done
+
+autoload -Uz compinit
+compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
+_comp_options+=(globdots)
 
 # ---------------------------------------------------------------- #
 
