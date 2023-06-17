@@ -343,7 +343,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "vk_consumer_illumination_down"
+                            "apple_vendor_keyboard_key_code": "spotlight"
                         }
                     ]
                 },
@@ -353,7 +353,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "vk_consumer_illumination_up"
+                            "key_code": "delete_forward"
                         }
                     ]
                 },
@@ -363,7 +363,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "delete_forward"
+                            "key_code": "f6"
                         }
                     ]
                 },
