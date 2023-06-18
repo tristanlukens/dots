@@ -26,6 +26,9 @@ alias g="lazygit"
 alias python="python3"
 alias pip="pip3"
 
+## -- PNPM/NPM -- ##
+#alias npm="pnpm"
+
 ## -- RUST -- ##
 alias cr="cargo run"
 alias cb="cargo build"
