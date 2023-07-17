@@ -1,7 +1,7 @@
 {
   "gruvbox.nvim": { "branch": "main", "commit": "df149bccb19a02c5c2b9fa6ec0716f0c0487feb0" },
-  "lazy.nvim": { "branch": "main", "commit": "14d76aac4bd3ff07c1fca074c210f28f766a931e" },
-  "nvim": { "branch": "main", "commit": "e0dd3f9bb1513c98ab4ef9404ea26e18babf858a" },
+  "lazy.nvim": { "branch": "main", "commit": "25beed5e2e935ebc00d7e3eed1dc502df3c40e39" },
+  "nvim": { "branch": "main", "commit": "bfe91dfb3a19ffd4445e43611fcde68acbb3fed4" },
   "nvim-autopairs": { "branch": "master", "commit": "ae5b41ce880a6d850055e262d6dfebd362bb276e" },
   "nvim-tmux-navigation": { "branch": "main", "commit": "543f090a45cef28156162883d2412fffecb6b750" },
   "nvim-treesitter": { "branch": "master", "commit": "180399295db82069bf07d3c2314530e7814c03d7" },
