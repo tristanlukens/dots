@@ -19,7 +19,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	"catppuccin/nvim",
 	"ellisonleao/gruvbox.nvim",
-	{ "windwp/nvim-autopairs", config = function()
+	{ "windwp/nvim-autopairs", config = function ()
     		require("nvim-autopairs").setup {}
 	end },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -58,3 +58,4 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+-- Statusline
