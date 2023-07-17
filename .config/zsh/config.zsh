@@ -1,6 +1,6 @@
 ## -- BAT -- ##
 # nord looks OK with ayu (my main theme), but there's also a gruvbox theme
-export BAT_THEME="Nord"
+export BAT_THEME="gruvbox-dark"
 
 # ---------------------------------------------------------------- #
 

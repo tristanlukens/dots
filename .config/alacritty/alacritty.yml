@@ -13,7 +13,7 @@
 
 import:
   # My own comment: either ~/.config/alacritty/catppuccin/{flavour}.yml or ~/.config/alacritty/themes/themes/{theme}.yaml
-  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
