@@ -1,11 +1,14 @@
 .DS_Store
 
 README.md
+Brewfile
 
 .git
 .gitignore
 .gitmodules
 
 bin
+
+scripts
 
 .stow-local-ignore

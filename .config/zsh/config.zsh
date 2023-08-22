@@ -9,3 +9,11 @@ export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.vscode,.sass-cache,node_mo
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 
 [ -f $HOME/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ---------------------------------------------------------------- #
+
+## -- WALK CD FUNCTIONALITY -- ##
+
+function lk {
+  cd "$(walk "$@")"
+}
