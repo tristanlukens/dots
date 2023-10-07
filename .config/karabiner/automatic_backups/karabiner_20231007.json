@@ -304,34 +304,6 @@
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 16646,
-                        "vendor_id": 1578
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 34304,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
                 }
             ],
             "fn_function_keys": [
@@ -371,7 +343,7 @@
                     },
                     "to": [
                         {
-                            "apple_vendor_keyboard_key_code": "launchpad"
+                            "key_code": "vk_consumer_illumination_down"
                         }
                     ]
                 },
@@ -381,7 +353,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "vk_consumer_illumination_down"
+                            "key_code": "vk_consumer_illumination_up"
                         }
                     ]
                 },
@@ -391,7 +363,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "vk_consumer_illumination_up"
+                            "key_code": "delete_forward"
                         }
                     ]
                 },
@@ -469,16 +441,6 @@
                     "to": [
                         {
                             "key_code": "right_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "consumer_key_code": "eject"
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_forward"
                         }
                     ]
                 }

@@ -1,10 +1,8 @@
-```figlet
- ____                     __ _ _
-| __ ) _ __ _____      __/ _(_) | ___
-|  _ \| '__/ _ \ \ /\ / / |_| | |/ _ \
-| |_) | | |  __/\ V  V /|  _| | |  __/
-|____/|_|  \___| \_/\_/ |_| |_|_|\___|
-```
+#  ____                     __ _ _
+# | __ ) _ __ _____      __/ _(_) | ___
+# |  _ \| '__/ _ \ \ /\ / / |_| | |/ _ \
+# | |_) | | |  __/\ V  V /|  _| | |  __/
+# |____/|_|  \___| \_/\_/ |_| |_|_|\___|
 
 brew "bat"
 brew "cmake"
@@ -22,6 +20,7 @@ brew "fzf"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "gnupg"
 brew "go"
 brew "gtop"
 brew "helix"
@@ -67,6 +66,8 @@ brew "yt-dlp"
 brew "zsh-fash-syntax-highlighting"
 brew "zsh"
 
+cask_args appdir: "~/Applications", require_sha: true
+
 cask "alacritty"
 cask "balenaetcher"
 cask "basictex"
@@ -75,7 +76,7 @@ cask "brave-browser"
 cask "brewlet"
 cask "coconutbattery"
 cask "cool-retro-term"
-cask "coteditor"
+#cask "coteditor"
 #cask "curseforge"
 cask "discord"
 cask "docker"
@@ -84,13 +85,11 @@ cask "duckduckgo"
 cask "firefox"
 cask "github"
 cask "gitup"
-cask "google-chrome"
-cask "handbrake"
+#cask "google-chrome"
 cask "handbrake"
 cask "iina"
 cask "karabiner-elements"
 cask "keycastr"
-cask "minecraft"
 cask "minecraft"
 cask "numi"
 cask "raycast"

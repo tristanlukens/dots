@@ -9,7 +9,8 @@ export BREW_LOC="/opt/homebrew"
 export PROJECTS="$HOME/Documents" # rust and ts projects mainly. Go projects are in their own folder
 
 export EDITOR="nvim"
-export VISUAL="cot"
+#export VISUAL="cot" # some programs use $VISUAL while I really only want them to use $EDITOR
+export VISUAL=$EDITOR
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # todo: add this
@@ -40,8 +41,7 @@ export PATH="$PNPM_HOME:$PATH"
 # ---------------------------------------------------------------- #
 
 # -- CONFIG -- ##
-# these are all for zsh itself, not for programs. The configs for
-# those are in $DOTS/zsh/config.zsh
+# these are all for zsh itself, not for programs. The configs for those are in $DOTS/zsh/config.zsh
 setopt LOCAL_OPTIONS
 setopt LOCAL_TRAPS
 setopt APPEND_HISTORY
@@ -70,7 +70,7 @@ bindkey -M vicmd "^[[B" down-line-or-beginning-search # down arrow
 
 ## -- PROGRAM CONFIGS -- ##
 # see first zsh todo
-source $DOTS/.config/zsh/config.zsh
+#source $DOTS/.config/zsh/config.zsh
 
 # ---------------------------------------------------------------- #
 
@@ -79,13 +79,15 @@ source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 chruby ruby-3.1.3
 
+[[ ! -r /Users/tristanlukens/.opam/opam-init/init.zsh ]] || source /Users/tristanlukens/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 # ---------------------------------------------------------------- #
 
 ## -- EVALS -- ##
 #eval "$(starship init zsh)" # comment out if using prompt under PROMPT section
 eval "$(jump shell)"
 eval "$(thefuck --alias)"
-eval "$(fnm env)"
+#eval "$(fnm env)"
 
 # ---------------------------------------------------------------- #
 

@@ -14,6 +14,6 @@ export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview 'bat --color=al
 
 ## -- WALK CD FUNCTIONALITY -- ##
 
-function lk {
+function wlk {
   cd "$(walk "$@")"
 }
