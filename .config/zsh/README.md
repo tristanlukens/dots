@@ -12,8 +12,7 @@ It's split up into `zshrc`, `config` and `aliases`. `zshrc` and `aliases` are pr
 
 ## Todo
 
-- [ ] fzf doesn't work when sourcing its setup script where I want to source it
 - [ ] check if order in zshrc doesn't make for bugs
 - [ ] add completions for some functions (including ga and gc)
 - [ ] zsh-autosuggestions
-- [ ] fix vim color in starship
+- [ ] show hidden files in fzf (or write a seperate function with that in mind)
