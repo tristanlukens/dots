@@ -36,3 +36,6 @@ Install GNU `stow` if you don't have it yet.
 
 - [ ] add install scripts
 - [ ] it turns out submodules didn't work, so I've gotta fix that
+- [ ] rewrite this readme
+- [ ] write good installation instructions
+
