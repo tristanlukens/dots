@@ -16,3 +16,4 @@ It's split up into `zshrc`, `config` and `aliases`. `zshrc` and `aliases` are pr
 - [ ] add completions for some functions (including ga and gc)
 - [ ] zsh-autosuggestions
 - [ ] show hidden files in fzf (or write a seperate function with that in mind)
+- [ ] show hidden files with tab completions
