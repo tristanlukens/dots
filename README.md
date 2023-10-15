@@ -12,30 +12,23 @@ My dotfiles.
 
 ---
 
-I used to just put all config files without real organisation, then went over to [Zach Holman's way of managing them](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/), but now decided to mirror my home directory's structure and use GNU `stow` to manage symlinks.
+A power user's dotfiles is their own personal Sagrada Família. It is simply never done. My Sagrada Família is right here. It's been a while since I started this project, and the one before this, dotfiles_old, is years old.
 
-Since my last dotfiles project, I've come to the conclusion that I don't need a lot of what I've got configured. Therefore this project is a lot smaller. I have however not written install scripts for everything — maybe Holman's way *is* the better way. I like `stow` tho, so *ik zie wel waar het schip strandt*.
-
-Maybe I'll find a hybrid way to do it.
-
-Also: I've kept alive the old project but renamed it to `dotfiles_old`.
+I had my Zach Holman dotfiles modules phase — but now I like to use GNU Stow. Nice and easy. Modules are hell to maintain, because of the difficulty managing aliases et al. I don't really do much programming anymore these days, so a simple setup is all I need. Besides that, I like the idea of minimalism, especially since I suck at shell scripting :p
 
 ## ~~Installation~~ Symlink management
 
-Install GNU `stow` if you don't have it yet.
+These installations are for macOS only.
 
+1. install [homebrew](https://brew.sh)
+1. `brew install stow`
 1. `git clone https://github.com/tristanlukens/dots.git $HOME/dots`
 2. `cd $HOME/dots`
 3. `stow .`
-
-<small>Now that I think about it — if you haven't installed anything, you won't have `stow` installed so installation scripts would be too much right?! Idfk, maybe this approach won't last as long as I first thought I would</small>
 
 ---
 
 ## Todo
 
-- [ ] add install scripts
-- [ ] it turns out submodules didn't work, so I've gotta fix that
-- [ ] rewrite this readme
-- [ ] write good installation instructions
-
+- [ ] write script for managing todos
+- [ ] stop using readmes all over the place and put all todos here, and the descriptions in the files themselves
