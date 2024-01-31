@@ -84,7 +84,6 @@ cask "gitup"
 #cask "google-chrome"
 cask "handbrake"
 cask "iina"
-cask "karabiner-elements"
 cask "minecraft"
 cask "notion" # because I like to look productive
 cask "numi"
