@@ -9,8 +9,4 @@
 
 My alacritty config. Basically made it look like how my iTerm config looked.
 
-The only theme I've got installed is [on GitHub](https://github.com/alacritty/alacritty-theme/blob/master/themes/gruvbox_dark.yaml).
-
-## Todo
-
-- actually perfect window placement :p
+The only theme I've got installed is [on GitHub](https://github.com/alacritty/alacritty-theme/blob/master/themes/gruvbox_dark.yaml). I did somehow port it to toml.
