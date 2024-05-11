@@ -31,4 +31,4 @@ These installations are for macOS only.
 ## Todo
 
 - [ ] write script for managing todos
-- [ ] stop using readmes all over the place and put all todos here, and the descriptions in the files themselves
+- [ ] reorganise the READMEs and todos
