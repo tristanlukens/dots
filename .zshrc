@@ -48,6 +48,7 @@ setopt INC_APPEND_HISTORY
 setopt PROMPT_SUBST
 setopt SHARE_HISTORY
 setopt COMPLETE_ALIASES
+setopt GLOBDOTS
 
 HISTFILE="$HOME/.cache/zsh/history"
 HISTSIZE=10000
@@ -73,7 +74,7 @@ source $DOTS/.config/zsh/config.zsh
 
 ## -- EVALS -- ##
 eval "$(jump shell)"
-eval "$(thefuck --alias)"
+#eval "$(thefuck --alias)"
 
 # ---------------------------------------------------------------- #
 
@@ -116,7 +117,7 @@ fpath=($fpath $DOTS/.config/zsh/functions)
 
 autoload -Uz compinit
 compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
-_comp_options+=(globdots)
+comp_options+=(globdots)
 
 
 # ---------------------------------------------------------------- #
