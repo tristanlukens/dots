@@ -11,7 +11,7 @@ alias disp="docker run --rm --name disp -h disp -it ubuntu:latest"
 
 ## -- GIT -- ##
 alias gp="git push"
-alias gundo="git reset --soft HEAD~1"
+alias gundoc="git reset --soft HEAD~1"
 alias gs="git status"
 alias gd="git diff"
 
@@ -26,9 +26,6 @@ alias g="lazygit"
 alias python="python3"
 alias pip="pip3"
 
-## -- PNPM/NPM -- ##
-#alias npm="pnpm"
-
 ## -- RUST -- ##
 alias cr="cargo run"
 alias cb="cargo build"
@@ -41,4 +38,4 @@ alias t="tree -CaI .git -I node_modules"
 alias hn="curl https://hkkr.in/f2"
 alias wtr="curl https://wttr.in/Netherlands"
 alias solitaire="ttysolitaire --no-background-color -p 10"
-alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias cd_icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
