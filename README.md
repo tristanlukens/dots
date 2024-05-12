@@ -32,3 +32,5 @@ These installations are for macOS only.
 
 - [ ] write script for managing todos
 - [ ] reorganise the READMEs and todos
+- [ ] write function for git add; I want to be able to select unstaged changes with fzf
+- [ ] ssh setup?
