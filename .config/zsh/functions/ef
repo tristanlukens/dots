@@ -1,6 +1,7 @@
 ef() {
 	if [[ $# -eq 0 ]]
 	then
+		FZF_DEFAULT_COMMAND="$FZF_DEFAULT_COMMAND --hidden"
 		local file=$(fzf)
 		[[ -n $file ]] && $EDITOR $file || echo "No file specified, aborting"
 	else
