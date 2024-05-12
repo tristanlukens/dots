@@ -25,6 +25,7 @@ alias g="lazygit"
 ## -- PYTHON -- ##
 alias python="python3"
 alias pip="pip3"
+alias pyglobal="source $HOME/.python_envs/global/bin/activate"
 
 ## -- RUST -- ##
 alias cr="cargo run"
