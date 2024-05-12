@@ -38,6 +38,8 @@ export GOPATH="$HOME/go"
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+export PATH="$BREW_LOC/opt/fzf/bin:$PATH"
+
 # ---------------------------------------------------------------- #
 
 ## -- ZSH CONFIG -- ##
@@ -74,6 +76,7 @@ source $DOTS/.config/zsh/config.zsh
 
 ## -- EVALS -- ##
 eval "$(jump shell)"
+eval "$(fzf --zsh)"
 #eval "$(thefuck --alias)"
 
 # ---------------------------------------------------------------- #
@@ -84,12 +87,8 @@ source $DOTS/.config/zsh/aliases.zsh
 # ---------------------------------------------------------------- #
 
 ## -- PROMPT -- ##
-autoload -Uz vcs_info
-precmd() { vcs_info }
-
-zstyle ':vcs_info:*' formats ' on branch %F{green}%b%f'
-
-PROMPT="as %F{yellow}%n%f in %F{cyan}%~%f$vcs_info_msg_0_ $ "
+source $DOTS/.config/zsh/misc/git-prompt.sh
+PS1='as %F{yellow}%n%f in %F{cyan}%~%f%F{green}$(__git_ps1 " (on %s)")%f $ '
 
 # ---------------------------------------------------------------- #
 
@@ -122,3 +121,5 @@ comp_options+=(globdots)
 # ---------------------------------------------------------------- #
 
 #zprof
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
