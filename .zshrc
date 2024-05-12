@@ -40,7 +40,7 @@ export PATH="$PNPM_HOME:$PATH"
 
 # ---------------------------------------------------------------- #
 
-# -- ZSH CONFIG -- ##
+## -- ZSH CONFIG -- ##
 setopt LOCAL_OPTIONS
 setopt LOCAL_TRAPS
 setopt APPEND_HISTORY
@@ -100,7 +100,7 @@ source $BREW_LOC/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highligh
 # zsh-vim-mode [https://github.com/softmoth/zsh-vim-mode]
 #MODE_INDICATOR="" # probably wanna turn that off when using ligatures
 KEYTIMEOUT=1 # https://youtu.be/lppTJFYigoU?t=11
-source $DOTS/.config/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh
+source $DOTS/.config/zsh/plugins/zsh-vim-mode.plugin.zsh
 
 # ---------------------------------------------------------------- #
 
@@ -118,7 +118,6 @@ fpath=($fpath $DOTS/.config/zsh/functions)
 autoload -Uz compinit
 compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
 comp_options+=(globdots)
-
 
 # ---------------------------------------------------------------- #
 
