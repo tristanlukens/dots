@@ -15,5 +15,6 @@ It's split up into `zshrc`, `config` and `aliases`. `zshrc` and `aliases` are pr
 - [ ] check if order in zshrc doesn't make for bugs
 - [ ] add completions for some functions (including ga and gc)
 - [ ] zsh-autosuggestions
-- [ ] show hidden files in fzf (or write a seperate function with that in mind)
-- [ ] show hidden files with tab completions
+- [x] show hidden files in fzf (or write a seperate function with that in mind)
+- [x] show hidden files with tab completions
+- [ ] fix zsh prompt git branch -> use builtin zsh function
