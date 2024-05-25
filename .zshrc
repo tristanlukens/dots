@@ -52,7 +52,7 @@ setopt SHARE_HISTORY
 setopt COMPLETE_ALIASES
 setopt GLOBDOTS
 
-HISTFILE="$HOME/.cache/zsh/history"
+HISTFILE=$HOME/.cache/zsh/history
 HISTSIZE=10000
 SAVEHIST=10000
 
