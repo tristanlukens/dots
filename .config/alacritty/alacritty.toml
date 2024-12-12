@@ -1,4 +1,4 @@
-import = ["/Users/tristanlukens/.config/alacritty/gruvbox_dark.toml"]
+general.import = ["/Users/tristanlukens/.config/alacritty/gruvbox_dark.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -18,7 +18,7 @@ style = "Regular"
 x = 1
 y = 8
 
-[shell]
+[terminal.shell]
 #args = ["-l", "-c", "tmux"]
 program = "/opt/homebrew/bin/zsh"
 

@@ -1,6 +1,6 @@
 [user]
 	email = 71601628+tristanlukens@users.noreply.github.com
-	name = tristanlukens
+	name = Tristan Lukens
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
