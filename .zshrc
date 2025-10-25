@@ -30,15 +30,27 @@ export PATH="$BREW_LOC/opt/llvm/bin:$PATH"
 export PATH="$DOTS/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-export PATH="$HOME/go/bin:$PATH"
+# rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# go
 export GOPATH="$HOME/go"
+export PATH="$HOME/go/bin:$PATH"
 
+# pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-export PATH="$BREW_LOC/opt/fzf/bin:$PATH"
+# fzf
+#export PATH="$BREW_LOC/opt/fzf/bin:$PATH"
+
+# ---------------------------------------------------------------- #
+
+## -- RUBY -- ##
+
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.4.7
 
 # ---------------------------------------------------------------- #
 
@@ -74,13 +86,6 @@ source $DOTS/.config/zsh/config.zsh
 
 # ---------------------------------------------------------------- #
 
-## -- EVALS -- ##
-eval "$(jump shell)"
-eval "$(fzf --zsh)"
-#eval "$(thefuck --alias)"
-
-# ---------------------------------------------------------------- #
-
 ## -- ALIASES -- ##
 source $DOTS/.config/zsh/aliases.zsh
 
@@ -88,7 +93,7 @@ source $DOTS/.config/zsh/aliases.zsh
 
 ## -- PROMPT -- ##
 source $DOTS/.config/zsh/misc/git-prompt.sh
-PS1='as %F{yellow}%n%f in %F{cyan}%~%f%F{green}$(__git_ps1 " (on %s)")%f $ '
+PS1='%F{yellow}%n%f in %F{cyan}%~%f @ %F{blue}%M%f%F{green}$(__git_ps1 " (on branch %s)")%f $ '
 
 # ---------------------------------------------------------------- #
 
@@ -120,6 +125,11 @@ comp_options+=(globdots)
 
 # ---------------------------------------------------------------- #
 
-#zprof
+## -- EVALS -- ##
+eval "$(jump shell)"
+eval "$(fzf --zsh)"
+#eval "$(thefuck --alias)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# ---------------------------------------------------------------- #
+
+#zprof
