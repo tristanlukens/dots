@@ -43,7 +43,7 @@ vim.cmd([[colorscheme gruvbox]])
 
 -- General settings
 vim.o.nu = true
-vim.o.rnu = true
+--vim.o.rnu = true
 
 vim.o.expandtab = false
 vim.o.tabstop = 4
